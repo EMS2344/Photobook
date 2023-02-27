@@ -1,12 +1,12 @@
-
 :root {
-  --periwinkle: #CAC5E6;
-  --french-gray: #ABAAB5;
-  --white: #FBFBFE;
-  --platinum: #DFDEE4;
-
+  --periwinkle: #cac5e6;
+  --french-gray: #abaab5;
+  --white: #fbfbfe;
+  --platinum: #dfdee4;
 }
-
+body {
+  background-color: #dad7cd;
+}
 .title {
   display: flex;
   position: relative;
@@ -17,6 +17,8 @@
   justify-content: center;
   color: black;
   font-size: 25px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   text-align: center;
 
   background-color: var(--platinum);
@@ -27,49 +29,109 @@
 .logo {
   border: none;
   background: none;
-}
-
-.logo {
-  border: none;
-  background: none;
-}
-.topNav {
-  display: flex;
-  justify-content: space-evenly;
-  padding: 15px;
-  color: var(--periwinkle);
-  box-shadow: rgba(0, 0, 0, 0.25) 0 10px 15px,
-    rgba(0, 0, 0, 0.22) 0 10px 10px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0 10px 15px, rgba(0, 0, 0, 0.22) 0 10px 10px;
-  border-radius: 5px 5px 15px 15px;
-}
-
-.topNav a {
-  position: relative;
-  text-decoration: none;
-  font-size: 18px;
-  color: black;
-  font-family: "Shantell Sans", cursive;
-}
-
-.topNav a:hover {
-  color: blue;
+  cursor: pointer;
 }
 
 .welcome {
-  position: relative;
   display: flex;
-  margin-top: 5%;
+  position: relative;
   width: fit-content;
   margin-left: 50%;
-  left: var(--width);
-
-  font-size: 600%;
-  background-color: red;
+  left: -400px;
+  font-size: 200%;
 }
 
-  left: -300px;
-  font-family: "Roboto Mono", monospace;
+.row {
+  margin-top: 20%;
+  margin-left: auto;
+}
 
-  font-size: 600%;
+.column {
+  float: right;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.6;
+  transition: opacity 0.25s;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtxt {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.sidenav a:hover {
+  padding: 10px;
+  background-color: #3a5a40;
+  border-radius: 0px 10px 0 10px;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.icon {
+  position: relative;
+  top: -30px;
+  left: 100px;
 }

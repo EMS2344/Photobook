@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JIVE</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap"
+      rel="stylesheet">
+      <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  </head>
+
+  </head>
+
+  <body>
+
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+         <div class="icon"><img src="./public/assets/images/user.png" width="50px" height="50px" top="2000px"></div> 
+          <a href="#">Camera</a>
+          <a href="#">Film</a>
+          <a href="#">Locations</a>
+          <a href="#">Contact</a>
+        </div>
+      
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    
+    <div class="row">
+        <div class="column">
+            <img src="./public/assets/images/car.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+        <div class="column">
+            <img src="./public/assets/images/cars.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+        <div class="column">
+            <img src="./public/assets/images/flowers.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+        <div class="column">
+            <img src="./public/assets/images/forest.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+        <div class="column">
+            <img src="./public/assets/images/sky.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+        <div class="column">
+            <img src="./public/assets/images/town.jpeg" style="width:100px" onclick="showImg(this);">
+        </div>
+
+    </div>
+
+    <div class="container">
+        <img id="expandedImg" style="width:100%">
+        <div id="imgtxt"></div>
+    </div>
+       
+    <div class="welcome">
+   
+      <!--no i don't know why it's like this-->
+    </div>
+
+
+
+    <script src="app.js"></script>
+  </body>
+</html>
