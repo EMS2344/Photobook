@@ -1,26 +1,32 @@
 :root {
-  --periwinkle: #cac5e6;
+  --mint: #c5f2d3;
   --french-gray: #abaab5;
+  --dark-gray: #575757;
   --white: #fbfbfe;
   --platinum: #dfdee4;
 }
 body {
   background-color: var(--white);
 }
-.title {
+
+.titleBox {
   position: relative;
   width: 105vw;
   margin-top: -10px;
   margin-left: -7px;
-  height: 45px;
+  height: 55px;
 
   box-shadow: 0 5px 5px var(--platinum);
   background-color: var(--white);
+}
+
+.title {
+  margin-top: -52px;
 
   color: black;
   text-shadow: 0 3px 3px var(--platinum);
   font-size: 25px;
-  font-family:'PT Sans Narrow';
+  font-family:'Pt Sans Narrow';
   letter-spacing: 6px;
   text-align: center;
 }
@@ -31,8 +37,10 @@ body {
   cursor: pointer;
 }
 
+
 .row {
   margin-left: calc(100vw - 50% - 237px);
+  margin-top: 50px;
 }
 
 .column {
@@ -74,15 +82,16 @@ body {
   font-size: 20px;
 }
 
+
 .sidenav {
   position: fixed;
-  z-index: 1;
-  height: 100%;
+  z-index: 99;
   width: 0;
+  height: 100vw;
   top: 0;
   left: 0;
   overflow-x: hidden;
-  background-color: rgba(255, 255, 255, 0.44);
+  background-color: rgba(223, 222, 228, 0.44);
   transition: 0.5s;
   padding-top: 60px;
 }
@@ -93,28 +102,37 @@ body {
   font-size: 25px;
   color: black;
   display: block;
-  transition: 0.3s;
+  transition: 0.25s;
   font-family: "PT Sans Narrow", sans-serif;
 }
 
 .sidenav a:hover {
   padding: 10px;
-  background-color: #3a5a40;
   border-radius: 0px 10px 0 10px;
 }
 
 .sidenav .closebtn {
   position: absolute;
-  top: 0;
-  right: 25px;
+  top: -10px;
+  right: 10px;
   font-size: 36px;
   margin-left: 50px;
   color: black;
 }
 
+.menu {
+  position: relative;
+  left: 22px;
+  top: 7px;
+}
+
+.menu:hover {
+  color: var(--dark-gray);
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px;
+    padding-top: 15px;;
   }
   .sidenav a {
     font-size: 18px;
@@ -126,3 +144,4 @@ body {
   top: -30px;
   left: 100px;
 }
+

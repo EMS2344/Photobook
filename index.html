@@ -16,45 +16,60 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
   </head>
 
-  </head>
-
   <body>
+    
+
+    <div class="titleBar">
+      <div class="titleBox">
 
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <div class="icon"><img src="./public/assets/images/user.png" width="50px" height="50px" top="2000px"></div> 
-          <a href="#">Camera</a>
-          <a href="#">Film</a>
-          <a href="#">Locations</a>
-          <a href="#">Contact</a>
+          <div class="icon"><img src="./public/assets/images/user.png" width="50px" height="50px"></div> 
+            <a href="#">Camera</a>
+            <a href="#">Film</a>
+            <a href="#">Locations</a>
+            <a href="#">Contact</a>
+          </div>
+          
+        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        
+        <div class="title">
+        <p>JIVE Photography And Design</p>
         </div>
-      
-        <span style="font-size:30px;cursor:pointer"onclick="openNav()">&#9776;</span>
+      </div>
+    </div>
     
+  
+    
+ 
+    
+
+  
+
     <div class="row">
         <div class="column">
-            <img class="imageExpanded" src="./public/assets/images/car.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/car.jpeg" onclick="showImg(this);">
         </div>
         <div class="column">
-            <img class="imageExpanded" src="./public/assets/images/cars.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/cars.jpeg" onclick="showImg(this);">
         </div>
         <div class="column">
-            <img  class="imageExpanded"src="./public/assets/images/flowers.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/flowers.jpeg" onclick="showImg(this);">
         </div>
         <div class="column">
-            <img class="imageExpanded" src="./public/assets/images/forest.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/forest.jpeg" onclick="showImg(this);">
         </div>
         <div class="column">
-            <img class="imageExpanded" src="./public/assets/images/sky.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/sky.jpeg" onclick="showImg(this);">
         </div>
         <div class="column">
-            <img class="imageExpanded" src="./public/assets/images/town.jpeg" onclick="showImg(this);">
+            <img src="./public/assets/images/town.jpeg" onclick="showImg(this);">
         </div>
 
     </div>
 
     <div class="container">
-        <img id="expandedImg" style="width:100%">
+        <img id="expandedImg" width="500px">
         <div id="imgtxt"></div>
     </div>
 
