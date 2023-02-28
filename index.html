@@ -3,74 +3,88 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JIVE</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap"
-      rel="stylesheet">
-      <link
+      rel="stylesheet"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    
-
     <div class="titleBar">
       <div class="titleBox">
-
         <div id="mySidenav" class="sidenav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <div class="icon"><img src="./public/assets/images/user.png" width="50px" height="50px"></div> 
-            <a href="#">Camera</a>
-            <a href="#">Film</a>
-            <a href="#">Locations</a>
-            <a href="#">Contact</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <div class="icon">
+            <img
+              src="./public/assets/images/user.png"
+              width="50px"
+              height="50px"
+            />
           </div>
-          
-        <span class="menu" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-        
+          <a href="http://127.0.0.1:3000/pages/camera/camera.html">Camera</a>
+          <a href="http://127.0.0.1:3000/pages/film/film.html">Film</a>
+          <a href="http://127.0.0.1:3000/pages/locations/locations.html"
+            >Locations</a
+          >
+          <a href="http://127.0.0.1:3000/pages/contact/contact.html">Contact</a>
+        </div>
+
+        <span
+          class="menu"
+          style="font-size: 30px; cursor: pointer"
+          onclick="openNav()"
+          >&#9776;</span
+        >
+
         <div class="title">
-        <p>JIVE Photography And Design</p>
+          <p>JIVE Photography And Design</p>
         </div>
       </div>
     </div>
-    
-  
-    
- 
-    
-
-  
 
     <div class="row">
-        <div class="column">
-            <img src="./public/assets/images/car.jpeg" onclick="showImg(this);">
-        </div>
-        <div class="column">
-            <img src="./public/assets/images/cars.jpeg" onclick="showImg(this);">
-        </div>
-        <div class="column">
-            <img src="./public/assets/images/flowers.jpeg" onclick="showImg(this);">
-        </div>
-        <div class="column">
-            <img src="./public/assets/images/forest.jpeg" onclick="showImg(this);">
-        </div>
-        <div class="column">
-            <img src="./public/assets/images/sky.jpeg" onclick="showImg(this);">
-        </div>
-        <div class="column">
-            <img src="./public/assets/images/town.jpeg" onclick="showImg(this);">
-        </div>
-
+      <div class="column">
+        <img src="./public/assets/images/car.jpeg" onclick="showImg(this);" />
+      </div>
+      <div class="column">
+        <img src="./public/assets/images/cars.jpeg" onclick="showImg(this);" />
+      </div>
+      <div class="column">
+        <img
+          src="./public/assets/images/flowers.jpeg"
+          onclick="showImg(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="./public/assets/images/forest.jpeg"
+          onclick="showImg(this);"
+        />
+      </div>
+      <div class="column">
+        <img src="./public/assets/images/sky.jpeg" onclick="showImg(this);" />
+      </div>
+      <div class="column">
+        <img src="./public/assets/images/town.jpeg" onclick="showImg(this);" />
+      </div>
     </div>
 
     <div class="container">
-        <img id="expandedImg" width="500px">
-        <div id="imgtxt"></div>
+      <img id="expandedImg" width="500px" />
+      <div id="imgtxt"></div>
     </div>
 
     <script src="app.js"></script>
