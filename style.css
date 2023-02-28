@@ -26,7 +26,7 @@ body {
   color: black;
   text-shadow: 0 3px 3px var(--platinum);
   font-size: 25px;
-  font-family:'Pt Sans Narrow';
+  font-family: "Pt Sans Narrow";
   letter-spacing: 6px;
   text-align: center;
 }
@@ -36,7 +36,6 @@ body {
   background: none;
   cursor: pointer;
 }
-
 
 .row {
   margin-left: calc(100vw - 50% - 237px);
@@ -81,7 +80,6 @@ body {
   color: white;
   font-size: 20px;
 }
-
 
 .sidenav {
   position: fixed;
@@ -132,7 +130,7 @@ body {
 
 @media screen and (max-height: 450px) {
   .sidenav {
-    padding-top: 15px;;
+    padding-top: 15px;
   }
   .sidenav a {
     font-size: 18px;
@@ -144,4 +142,3 @@ body {
   top: -30px;
   left: 100px;
 }
-
