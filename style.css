@@ -5,60 +5,53 @@
   --platinum: #dfdee4;
 }
 body {
-  background-color: #dbdbdb;
+  background-color: var(--white);
 }
 .title {
-  display: flex;
   position: relative;
-  min-width: auto;
-  height: 60px;
+  width: 105vw;
+  margin-top: -10px;
+  margin-left: -7px;
+  height: 45px;
 
-  justify-content: space-evenly;
-  justify-content: center;
+  box-shadow: 0 5px 5px var(--platinum);
+  background-color: var(--white);
+
   color: black;
+  text-shadow: 0 3px 3px var(--platinum);
   font-size: 25px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family:'PT Sans Narrow';
+  letter-spacing: 6px;
   text-align: center;
-
-  background-color: var(--platinum);
-  border-radius: 15px;
-  margin-bottom: 5px;
 }
 
 .logo {
-  border: none;
+  display: flex;
   background: none;
   cursor: pointer;
 }
 
-.welcome {
-  display: flex;
-  position: relative;
-  width: fit-content;
-  margin-left: 50%;
-  left: -400px;
-  font-size: 200%;
-}
-
 .row {
-  margin-top: 20%;
-  margin-left: auto;
+  margin-left: calc(100vw - 50% - 237px);
 }
 
 .column {
-  float: right;
-  padding: 10px;
+  float: left;
+  padding: 5px;
 }
 
 .column img {
   opacity: 0.6;
-  transition: opacity 0.25s;
+  transition: opacity 0.25s, max-height 0.25s;
+  max-height: 75px;
+  width: 75px;
+  object-fit: cover;
   cursor: pointer;
 }
 
 .column img:hover {
   opacity: 1;
+  max-height: 100px;
 }
 
 .row:after {
@@ -70,6 +63,7 @@ body {
 .container {
   position: relative;
   display: none;
+  margin-left: calc(100vw - 50% - 232px);
 }
 
 #imgtxt {
@@ -81,10 +75,10 @@ body {
 }
 
 .sidenav {
-  height: 100%;
-  width: 0;
   position: fixed;
   z-index: 1;
+  height: 100%;
+  width: 0;
   top: 0;
   left: 0;
   overflow-x: hidden;
