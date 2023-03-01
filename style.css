@@ -73,6 +73,20 @@ body {
   margin-left: calc(100vw - 50% - 232px);
 }
 
+#expandedImg {
+  animation: expandexpandedImg 5s 1;
+  object-fit: cover;
+}
+
+@keyframes expandexpandedImg {
+  from {
+    max-height: 0px;
+  }
+  to {
+    max-height: 1000px;
+  }
+}
+
 #imgtxt {
   position: absolute;
   bottom: 15px;
