@@ -1,19 +1,21 @@
 body {
-  background-color: white;
+  background-color: black;
   overflow-x: hidden;
 }
 
 .wrapper {
   display: flex;
-  height: 500px;
+  height: 550px;
   align-items: center;
   box-sizing: border-box;
-  overflow-x: scroll;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
   overflow-y: hidden;
-
   position: relative;
   top: 300px;
   width: 1500px;
+
+  box-shadow: rgba(0, 0, 0, 0.3);
 }
 
 .card {
@@ -121,7 +123,7 @@ img {
 }
 
 .title {
-  color: black;
+  color: white;
   display: flex;
   position: relative;
   bottom: -50px;
@@ -133,7 +135,7 @@ img {
   width: 50px;
   position: relative;
   left: 60px;
-  background-color: black;
+  background-color: white;
   height: 55px;
 }
 .title1 {
@@ -152,7 +154,7 @@ img {
 .TopNav a {
   text-decoration: none;
   font-size: 30px;
-  color: black;
+  color: white;
   font-family: "Pt Sans Narrow";
   position: relative;
   top: 10px;
@@ -166,4 +168,12 @@ img {
   position: relative;
   top: 100px;
   font-size: 200px;
+}
+.scrollable-element {
+  scrollbar-color: red yellow;
+}
+
+h1 {
+  position: relative;
+  top: 700px;
 }
