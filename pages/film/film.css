@@ -12,7 +12,7 @@ body {
   overscroll-behavior-x: contain;
   overflow-y: hidden;
   position: relative;
-  top: 300px;
+  top: 200px;
   width: 1500px;
 
   box-shadow: rgba(0, 0, 0, 0.3);
@@ -135,7 +135,7 @@ img {
   width: 50px;
   position: relative;
   left: 60px;
-  background-color: white;
+  background-color: blue;
   height: 55px;
 }
 .title1 {
@@ -155,7 +155,7 @@ img {
   text-decoration: none;
   font-size: 30px;
   color: white;
-  font-family: "Pt Sans Narrow";
+  font-family: "Orbitron", sans-serif;
   position: relative;
   top: 10px;
 }
